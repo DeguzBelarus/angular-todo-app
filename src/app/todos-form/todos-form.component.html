@@ -1,0 +1,9 @@
+<div>
+  <input
+    type="text"
+    placeholder="Add the task..."
+    [(ngModel)]="title"
+    (keydown.enter)="addTodoHandler()"
+  />
+  <button type="button" (click)="addTodoHandler()">Add Todo</button>
+</div>
